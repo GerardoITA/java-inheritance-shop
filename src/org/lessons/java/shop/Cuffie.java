@@ -10,4 +10,25 @@ public class Cuffie extends Prodotto {
         this.cablate = cablate;
         this.colore = colore;
     }
+
+    public boolean isCablate() {
+        return cablate;
+    }
+
+    public void setCablate(boolean cablate) {
+        this.cablate = cablate;
+    }
+
+    public String getColore() {
+        return colore;
+    }
+
+    public void setColore(String colore) {
+        this.colore = colore;
+    }
+    @Override
+    public String toString() {
+        String obj = "Nome = " + getNome() + " Descrizione = " + getDescrizione() + " Prezzo = " + getPrezzoIva() + " Cablate = " + isCablate() + " Colore = " + getColore();
+        return obj;
+    }
 }

@@ -24,7 +24,7 @@ public class Main {
             Smartphone oggetto = new Smartphone(nome, descrizione, prezzo, iva,  memoria);
             System.out.println(oggetto);
         }
-        if (prodotto.equalsIgnoreCase("televisore")) {
+        else if (prodotto.equalsIgnoreCase("televisore")) {
             System.out.println("Inserire nome");
             String nome = scanner.next();
             System.out.println("Inserire descrizione");
@@ -41,7 +41,7 @@ public class Main {
             Televisore oggetto = new Televisore(nome, descrizione, prezzo, iva,  smart, dimensioni);
             System.out.println(oggetto);
         }
-        if (prodotto.equalsIgnoreCase("cuffie")) {
+        else if (prodotto.equalsIgnoreCase("cuffie")) {
             System.out.println("Inserire nome");
             String nome = scanner.next();
             System.out.println("Inserire descrizione");
@@ -61,7 +61,6 @@ public class Main {
         else {
             System.out.println("Scelta non valida");
         }
-
 
 
 
